@@ -1,13 +1,9 @@
 # Spring Boot + Keycloak OAuth2 Demo
 
 This project demonstrates integration of **Spring Boot** with **Keycloak** using **OAuth2 / OpenID Connect**, including:
-
 - User authentication via Keycloak
 - Realm roles (e.g., `NICE`)
-- Role-based access control
 - Automatic **Refresh Token** support
-- Thymeleaf UI
-
 ---
 
 ## **Truy cập vào app http://localhost:8081/**
@@ -26,3 +22,4 @@ This project demonstrates integration of **Spring Boot** with **Keycloak** using
 ![alt text](image.png)
 
 --> Mở tab mới vẫn còn ở trạng thái login
+
