@@ -21,7 +21,8 @@ This project demonstrates integration of **Spring Boot** with **Keycloak** using
 ---
 
 ## **REFRESH TOKEN**
-- Kéo dài session của user mà không cần login lạ
+- Kéo dài session của user mà không cần login lại
 - Đăng nhập vào admin console, kích hoạt 
 ![alt text](image.png)
+
 --> Mở tab mới vẫn còn ở trạng thái login
