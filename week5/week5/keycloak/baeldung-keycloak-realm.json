@@ -1,0 +1,41 @@
+{
+  "realm": "baeldung-keycloakkkk",
+  "enabled": true,
+  "users": [
+    {
+      "username": "brice",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        { "type": "password", "value": "secret", "temporary": false }
+      ],
+      "realmRoles": ["NICE"]
+    },
+    {
+      "username": "igor",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        { "type": "password", "value": "secret", "temporary": false }
+      ]
+    }
+  ],
+  "roles": {
+    "realm": [
+      { "name": "NICE", "description": "A nice person" }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "spring-client",
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "secret": "secret",
+      "redirectUris": ["http://localhost:8081/login/oauth2/code/keycloak"],
+      "baseUrl": "http://localhost:8081",
+      "webOrigins": ["*"],
+      "defaultClientScopes": ["email", "profile", "roles"],
+      "fullScopeAllowed": true
+    }
+  ]
+}
